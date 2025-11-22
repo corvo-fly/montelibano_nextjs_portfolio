@@ -47,9 +47,14 @@ export default function Navbar() {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur border-b border-neutral-800">
             <nav className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-                <span className="font-semibold tracking-tight text-sm md:text-base text-emerald-400">
+                <button
+                    onClick={() =>
+                        document.getElementById("hero")?.scrollIntoView({ behavior: "smooth" })
+                    }
+                    className="font-semibold tracking-tight text-sm md:text-base text-emerald-400 cursor-pointer">
                     &lt;JM /&gt;
-                </span>
+                </button>
+
 
                 <ul className="hidden md:flex gap-6 text-sm">
                     {links.map((link) => (
