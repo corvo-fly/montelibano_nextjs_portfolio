@@ -1,5 +1,3 @@
-"use client";
-
 export default function Hero() {
     return(
         <section 
@@ -10,7 +8,7 @@ export default function Hero() {
                     &gt; Hello, I&apos;m
                 </p>
 
-                <h1 className="text-4xl md:text-6xl font-bold mb:4 opacity-0 animate-fade-up">
+                <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-up">
                     JOPHET MONTELIBANO JR.
                 </h1>
 
