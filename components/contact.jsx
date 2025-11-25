@@ -64,7 +64,27 @@ export default function Contact() {
                     </div>
                     </div>
 
-            {/* Location */}
+                    <div className="flex gap-3 items-start">
+                        <div className="w-10 h-10 flex items-center justify-center border border-neutral-700 rounded-md">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="w-6 h-6 text-emerald-400"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M4.98 3.5a2.5 2.5 0 11.02 5 2.5 2.5 0 01-.02-5zM3 8.98h4v12H3v-12zm7.5 0h3.83v1.64h.06c.53-.96 1.83-1.97 3.76-1.97 4.02 0 4.76 2.65 4.76 6.1v6.23h-4v-5.52c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.43-2.12 2.92v5.62h-4v-12z" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <p className="text-neutral-400">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/jophet-montelibano-jr" target="_blank" rel="noreferrer" className="text-emerald-300 hover:underline">
+                                    linkedin.com/in/jophet-montelibano-jr
+                                </a>
+                        </div>
+                    </div>
+
+
                     <div className="flex gap-3 items-start">
                         <div className="w-10 h-10 flex items-center justify-center border border-neutral-700 rounded-md">
                             <svg
