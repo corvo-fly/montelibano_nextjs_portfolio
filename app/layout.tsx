@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: 'Jophet Montelibano Jr | Portfolio',
-  description: 'Porfolio Website'
+  description: 'Personal portfolio website of Jophet Montelibano Jr'
 };
 
 export default function RootLayout({
@@ -15,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-neutral-100">
+      <body className={inter.className}>
         {children}
       </body>
     </html>
