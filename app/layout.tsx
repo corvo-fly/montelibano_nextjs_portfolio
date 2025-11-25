@@ -4,7 +4,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: 'Corvo | Portfolio',
+  title: 'Jophet Montelibano Jr | Portfolio',
   description: 'Porfolio Website'
 };
 
