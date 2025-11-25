@@ -26,7 +26,7 @@ export default function Hero() {
                         Explore My Work ⬇
                     </a>
 
-                    <a href="https://github.com/corvo-fly" target="_blank" rel="norefferer"
+                    <a href="https://github.com/corvo-fly" target="_blank" rel="noreferrer"
                     className="px-6 py-2 border border-neutral-700 text-neutral-200 text-sm md:text-base hover:border-emerald-400 hover:text-emerald-300 transform hover:scale-105 transition-all duration-200 inline-flex items-center gap-2">
                         <span>GitHub</span>
                     </a>

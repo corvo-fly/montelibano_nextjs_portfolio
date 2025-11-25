@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function About() {
     return (
     <section 
@@ -9,6 +10,19 @@ export default function About() {
                 <h2 className="text-xl md:text-2x1 font-semibold mb-6">
                     <span className="text-emerald-400 mr-2">01.</span> About Me
                 </h2>
+
+                <div className="flex justify-center mb-10">
+                    <div className="group">
+                        <div
+                            className="w-64 h-44 md:w-48 md:h-56 rounded-2xl overflow-hidden border border-emerald-400/70 bg-neutral-900 shadow-[0_0_18px_rgba(16,185,129,0.35)] transition-all duration-300 group-hover:shadow-[0_0_32px_rgba(16,185,129,0.55)] group-hover:-translate-y-1">
+                            <img
+                            src="/profile.jpg"
+                            alt="Profile"
+                            className="w-full h-full object-cover scale-150 transition-all duration-300"
+                            />
+                        </div>
+                    </div>
+                </div>
 
                 <p className="text-neutral-300 mb-4 leading-relaxed">
                     Motivated BS Information Technology student with skills in database design,
