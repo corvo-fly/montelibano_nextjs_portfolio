@@ -1,36 +1,188 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+JOPHET MONTELIBANO JR. – PERSONAL PORTFOLIO WEBSITE
 
-## Getting Started
+A modern and responsive developer portfolio built using Next.js (App Router) and Tailwind CSS, created as the Final Laboratory Project for a Web Development course. This website showcases my projects, skills, background, and contact information as a BS Information Technology student.
 
-First, run the development server:
+Live Demo: https://montelibano-nextjs-portfolio.vercel.app
+Repository: [https://github.com/corvo-fly/montelibano_nextjs_portfolio](https://github.com/corvo-fly/montelibano_nextjs_portfolio)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+FEATURES
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Clean, modern UI with a consistent emerald green theme
+* Smooth scrolling navigation across all sections
+* Fully responsive design for desktop, tablet, and mobile
+* Reusable components (Hero, About, Projects, Skills, Contact, Footer)
+* Integrated GitHub and LinkedIn social links
+* Project cards with detailed descriptions, technologies, and documentation links
+* Contact form with focus effects (front-end only)
+* Optimized with next/font for fast, professional typography
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+TECH STACK
 
-To learn more about Next.js, take a look at the following resources:
+Frontend Framework: Next.js (App Router)
+Styling: Tailwind CSS
+Language: JavaScript
+Images & Fonts: next/image, next/font
+Deployment: Vercel
+Version Control: Git & GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+PROJECT STRUCTURE
 
-## Deploy on Vercel
+app/
+components/
+hero.jsx
+about.jsx
+projects.jsx
+skills.jsx
+contact.jsx
+navbar.jsx
+footer.jsx
+globals.css
+layout.tsx
+page.jsx
+public/
+profile.jpg
+Montelibano_Data.pdf
+tailwind.config.js
+next.config.ts
+package.json
+README.md
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+WEBSITE SECTIONS
+
+1. HERO
+
+* Full name and professional tagline
+* Short introduction paragraph
+* Buttons for GitHub, LinkedIn, and “Explore My Work”
+* Fade-up animation on load
+
+2. ABOUT ME
+   Includes:
+
+* Profile picture with emerald glow effect
+* Three detailed paragraphs about My IT background and goals
+* Cards for:
+
+  * Education: CPU – BSIT
+  * Location: Mandurriao, Iloilo City
+  * Languages: English, Filipino
+
+3. PROJECTS
+   Showcasing at least three projects, each with:
+
+* Title, year, and role
+* Summary and bullet-point contributions
+* Technology tags
+* Links to GitHub or documentation
+
+Current Projects:
+
+A. Monty's Store Database System (2025)
+
+* 7-table relational database design
+* ERD, data dictionary, views, stored procedures
+* Purchase & sales transactions
+* Inventory and low-stock monitoring
+* Includes documentation PDF
+
+B. Developer Portfolio Website (2025)
+
+* Built with Next.js + Tailwind CSS
+* Fully responsive layout
+* Smooth scroll, icons, and micro-animations
+* Deployed via Vercel
+* This very website
+
+C. StudyHub Mobile Planner (2024)
+
+* Flutter mobile app concept
+* Task and deadline tracking
+* UI screens for daily planning
+* Local state management exploration
+
+4. SKILLS
+
+* Database & Backend: SQL, PL/SQL, SSMS
+* Programming: Java, Python, JavaScript, Dart & Flutter
+* Design: UI/UX fundamentals
+* Version Control: Git & GitHub
+* Tech stack chips aligned at the bottom
+
+5. CONTACT
+
+* Contact form (Name, Email, Message)
+* Contact details with emerald-themed icons
+* GitHub & LinkedIn links
+* Location
+
+6. FOOTER
+
+* © 2025 Jophet Montelibano Jr. All rights reserved
+* Built with Next.js & Tailwind CSS
+
+---
+
+INSTALLATION & USAGE
+
+1. Clone the repository
+   git clone [https://github.com/corvo-fly/montelibano_nextjs_portfolio](https://github.com/corvo-fly/montelibano_nextjs_portfolio)
+   cd montelibano_nextjs_portfolio
+
+2. Install dependencies
+   npm install
+
+3. Run the development server
+   npm run dev
+   Then open [http://localhost:3000/](http://localhost:3000/)
+
+4. Build for production
+   npm run build
+   npm start
+
+---
+
+DEPLOYMENT (VERCEL)
+
+1. Push the project to GitHub
+2. Import it into Vercel
+3. Deploy
+4. Add the final live URL at the top of this README
+
+---
+
+CONTACT INFORMATION
+
+Name: Jophet Montelibano Jr.
+Email: (your email here)
+GitHub: [https://github.com/corvo-fly](https://github.com/corvo-fly)
+LinkedIn: (your LinkedIn URL here)
+Location: Mandurriao, Iloilo City
+
+---
+
+NOTES
+
+This portfolio was created as part of the Final Laboratory Project: Personal Portfolio.
+It demonstrates practical skills in:
+
+* Modern frontend development
+* Responsive UI design
+* Database documentation integration
+* Clean component structure
+* Version control practices
+
+---
+
+ACKNOWLEDGMENTS
+
+* Next.js Team
+* Tailwind CSS Team
+* Vercel Deployment Platform
