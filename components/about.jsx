@@ -1,78 +1,126 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+
 export default function About() {
     return (
-    <section 
-    id="about"
-    className="bg-black text-neutral-100 py-24 border -t border-neutral-900">
-        <div className=" max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+        <section
+        id="about"
+        className="bg-black text-neutral-100 py-24 border-t border-neutral-900"
+        >
+            <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] gap-12 items-start">
+                <div>
+                    <h2 className="text-xl md:text-2xl font-semibold mb-8">
+                        <span className="text-emerald-400 mr-2">01.</span> About Me
+                    </h2>
 
-            <div>
-                <h2 className="text-xl md:text-2x1 font-semibold mb-6">
-                    <span className="text-emerald-400 mr-2">01.</span> About Me
-                </h2>
-
-                <div className="flex justify-center mb-10">
-                    <div className="group">
-                        <div
-                            className="w-64 h-44 md:w-48 md:h-56 rounded-2xl overflow-hidden border border-emerald-400/70 bg-neutral-900 shadow-[0_0_18px_rgba(16,185,129,0.35)] transition-all duration-300 group-hover:shadow-[0_0_32px_rgba(16,185,129,0.55)] group-hover:-translate-y-1">
-                            <img
-                            src="/profile.jpg"
-                            alt="Profile"
-                            className="w-full h-full object-cover scale-150 transition-all duration-300"
-                            />
-                        </div>
+                <div className="flex flex-col items-center md:items-start mb-8">
+                    <div className="inline-block rounded-3xl border border-emerald-500/70 bg-black/40 shadow-[0_0_40px_rgba(16,185,129,0.45)] overflow-hidden hover:shadow-[0_0_55px_rgba(16,185,129,0.7)] hover:-translate-y-1 transition-all duration-300">
+                        <Image
+                            src="/profile.jpg"               
+                            alt="Jophet Montelibano Jr."
+                            width={320}
+                            height={380}
+                            className="object-cover"
+                            priority
+                        />
                     </div>
                 </div>
 
-                <p className="text-neutral-300 mb-4 leading-relaxed">
-                    Motivated BS Information Technology student with skills in database design,
-                    SQL, programming, and mobile development. Currently building academic projects
-                    focused on system automation and application development.
-                </p>
+                <div className="space-y-4 text-sm md:text-base text-neutral-300 leading-relaxed">
+                    <p>
+                        I&apos;m a BS Information Technology student with a strong focus on{" "}
+                        database design, SQL, and application development. I enjoy turning
+                        real-world problems into structured systems, especially when it
+                        involves relational databases and clean, reliable data flows.
+                    </p>
 
-                <p className="text-neutral-300 mb-4 leading-relaxed">
-                    Eager to gain hands-on experience in real-world IT environments while
-                    continuously improving technical and problem-solving skills.
-                </p>
-            </div>
+                    <p>
+                        Throughout my academic projects I&apos;ve worked on designing
+                        normalized schemas, writing stored procedures, and building
+                        end-to-end solutions that connect the database layer with simple
+                        user interfaces. I also explore programming with Java, Python,
+                        HTML/CSS/JavaScript, and Dart &amp; Flutter, which helps me bridge
+                        backend logic with usable frontends and mobile experiences.
+                    </p>
 
-            <div className="space-y-6">
-
-                <div className="p-6 border border-neutral-800">
-                    <h3 className="text-emerald-300 font-semibold mb-2 flex items-center gap-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 text-emerald-400"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={1.5}
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M12 14.25L3.75 9.75 12 5.25l8.25 4.5-8.25 4.5z"
-                            />
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M6.75 10.5v4.5c0 .621.504 1.125 1.125 1.125h8.25A1.125 1.125 0 0017.25 15v-4.5"
-                            />
-                        </svg>
-                    Education
-                    </h3>
-                    <p className="text-sm text-neutral-400">2022 - PRESENT</p>
-                    <p className="font-medium">Central Philippine University</p>
-                    <p className="text-sm text-neutral-300">
-                        Bachelor of Science in Information Technology
+                    <p>
+                        Right now I&apos;m looking for opportunities to gain hands-on
+                        experience in real-world IT environments—whether that&apos;s
+                        database work, automation, or web and mobile development. I enjoy
+                        collaborating with others, debugging tricky issues, and
+                        continuously improving my problem-solving and technical skills.
                     </p>
                 </div>
+                </div>
 
-                <div className="p-6 border border-neutral-800">
-                    <h3 className="text-emerald-300 font-semibold mb-2 flex items-center gap-2">
+                <div className="space-y-6 text-sm md:text-base">
+                    <div className="border border-neutral-800 rounded-lg p-5 bg-neutral-950/40">
+                        <div className="flex items-center gap-3 mb-3">
+                            <div className="w-8 h-8 flex items-center justify-center rounded-md">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6 text-emerald-400"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth={1.5}
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M12 14.25L3.75 9.75 12 5.25l8.25 4.5-8.25 4.5z"
+                                    />
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M6.75 10.5v4.5c0 .621.504 1.125 1.125 1.125h8.25c.621 0 1.125-.504 1.125-1.125v-4.5"
+                                    />
+                                </svg>
+                            </div>
+                                <h3 className="font-semibold text-neutral-100">Education</h3>
+                        </div>
+
+                            <p className="text-xs uppercase tracking-wide text-neutral-400 mb-1">
+                                2022 – Present
+                            </p>
+                            <p className="font-medium text-neutral-100">
+                                Central Philippine University
+                            </p>
+                            <p className="text-neutral-300">
+                                Bachelor of Science in Information Technology (BSIT)
+                            </p>
+                    </div>
+
+                    <div className="border border-neutral-800 rounded-lg p-5 bg-neutral-950/40">
+            <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 flex items-center justify-center rounded-md">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-6 h-6 text-emerald-400"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={1.5}
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M12 21c4.5-4 7.5-7.5 7.5-11a7.5 7.5 0 10-15 0c0 3.5 3 7 7.5 11z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                </div>
+                <h3 className="font-semibold text-neutral-100">Location</h3>
+            </div>
+
+            <p className="text-neutral-300">Mandurriao, Iloilo City</p>
+            </div>
+
+            <div className="border border-neutral-800 rounded-lg p-5 bg-neutral-950/40">
+                <div className="flex items-center gap-3 mb-3">
+                    <div className="w-8 h-8 flex items-center justify-center rounded-md">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 text-emerald-400"
+                            className="w-6 h-6 text-emerald-400"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -81,47 +129,26 @@ export default function About() {
                             <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                d="M12 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z"
-                            />
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M12 21c4-4.5 6-7.5 6-10.5a6 6 0 10-12 0c0 3 2 6 6 10.5z"
-                            />    
-                        </svg>
-                        Location
-                    </h3>
-                <p className="text-neutral-300">Iloilo, Philippines</p>
-                </div>
-
-                <div className="p-6 border border-neutral-800">
-                    <h3 className="text-emerald-300 font-semibold mb-2 flex items-center gap-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 text-emerald-400"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={1.5} 
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M3 5.25h6M6 3v4.5m-3 4.5h4.5A2.25 2.25 0 019.75 14.25v0A2.25 2.25 0 017.5 16.5H6l2.25 4.5M13.5 5.25h7.5m-3.75-2.25v4.5M15 21l2.25-4.5"
+                                d="M2.25 12c0-4.556 3.694-8.25 8.25-8.25S18.75 7.444 18.75 12s-3.694 8.25-8.25 8.25c-.893 0-1.757-.138-2.568-.395L3.75 21.75l1.895-3.755A8.181 8.181 0 012.25 12z"
                             />
                         </svg>
-                        Languages
-                    </h3>
-
-                    <p className="font-medium">English</p>
-                    <p className="text-sm text-neutral-400">Fluent</p>
-
-                    <p className="font-medium mt-2">Filipino</p>
-                    <p className="text-sm text-neutral-400">Fluent</p>
+                    </div>
+                        <h3 className="font-semibold text-neutral-100">Languages</h3>
                 </div>
 
+                <ul className="space-y-1 text-neutral-300">
+                    <li>
+                    <span className="font-medium text-neutral-100">English</span>{" "}
+                        – Fluent
+                    </li>
+                    <li>
+                    <span className="font-medium text-neutral-100">Filipino</span>{" "}
+                        – Fluent
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-    );
+    </div>
+</section>
+);
 }
